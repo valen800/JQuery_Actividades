@@ -1,7 +1,5 @@
-$("#showButtonId").click(function() {
-    $("#imgId").show();
-})
-
-$("#hideButtonId").click(function() {
-    $("#imgId").hide();
+$(document).ready(function() {
+    $("input[name=colors]").click(function() {
+        alert($(this).val())
+    })  
 })
