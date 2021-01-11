@@ -1,7 +1,7 @@
-$("#showButtonId").click(function() {
-    $("#imgId").show();
+$("p").mouseover(function() {
+    $("p").css('font-size', "16px")
 })
 
-$("#hideButtonId").click(function() {
-    $("#imgId").hide();
+$("p").mouseout(function() {
+    $("p").css('font-size', "14px")
 })

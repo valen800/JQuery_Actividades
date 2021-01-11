@@ -1,7 +1,7 @@
-$("#showButtonId").click(function() {
-    $("#imgId").show();
-})
-
-$("#hideButtonId").click(function() {
-    $("#imgId").hide();
-})
+$(document).ready(function() {
+    $("button").click(function() {
+      $("img").fadeOut(1000) {
+          
+      }
+    });
+});
