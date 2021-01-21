@@ -1,7 +1,9 @@
 $("p").mouseover(function() {
-    $("p").css('font-size', "16px")
+    $("p").removeClass("bigSize");
+    $("p").addClass("smallSize");
 })
 
 $("p").mouseout(function() {
-    $("p").css('font-size', "14px")
+    $("p").removeClass("smallSize");
+    $("p").addClass("bigSize");
 })
