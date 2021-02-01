@@ -1,1 +1,0 @@
-alert("Fichero JS alert")

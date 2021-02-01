@@ -1,14 +1,9 @@
 $(document).ready(function() {
-    $("button").click(function() {
-        $("#loadingImage").show()
-        $.ajax({
-            url: "file.php",
-        }).done( function(result) {
-            $("#loadingImage").hide()
-            $("#content").html(result)
-        }).fail(function() {
-            $("#loadingImage").hide()
-            alert("Error file.php")
-        })
+    $("#buttonGreet").click(function() {
+        $(".content-p").css("opacity", 1)
+    })
+
+    $("#buttonFarewell").click(function() {
+        $(".content-p").css("opacity", 0)
     })
 })
