@@ -1,0 +1,1 @@
+alert("Fichero JS alert")
