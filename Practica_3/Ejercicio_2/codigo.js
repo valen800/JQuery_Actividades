@@ -2,13 +2,13 @@ $(document).ready(function() {
     $("button").click(function() {
         $("#loadingImage").show()
         $.ajax({
-            url: "file.php",
+            url: "fil.php",
         }).done( function(result) {
             $("#loadingImage").hide()
             $("#content").html(result)
-        }).fail(function() {
+        }).fail(function(jqXHR, textStatus) {
             $("#loadingImage").hide()
-            alert("Error file.php")
+            alert(textStatus + " - " + jqXHR.status + jqXHR.responseText)
         })
     })
 })

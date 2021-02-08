@@ -12,6 +12,7 @@ $(document).ready(function() {
             dataType: 'json',
             encode: true
         }).done(function(data) {
+            print(data);
             checkReturnCode(data);
         }).fail(function(data) {
             checkReturnCode(data);

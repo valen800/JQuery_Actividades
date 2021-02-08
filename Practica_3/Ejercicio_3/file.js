@@ -1,1 +1,1 @@
-alert("Fichero JS alert")
+eval("4+4");
